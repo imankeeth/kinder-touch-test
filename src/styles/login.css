@@ -73,31 +73,35 @@ body {
 /* Form */
 .field {
   position: relative;
-  margin-bottom: 2em; }
-
-.label {
-  position: absolute;
-  height: 2rem;
-  line-height: 2rem;
-  bottom: 0;
-  left: 0;
-  color: #999;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-.input {
-  width: 100%;
-  font-size: 100%;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  height: 2rem;
-  line-height: 2rem;
-  border-bottom: 1px solid #eee;
-  color: #777;
-  transition: all 0.2s ease-in; }
-  .input:focus {
-    outline: 0;
-    border-color: #ccc; }
+  margin-bottom: 2.5em; }
+  .field .label {
+    position: absolute;
+    height: 2rem;
+    line-height: 2rem;
+    bottom: 0;
+    left: 0;
+    color: #999;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .field .input {
+    width: 100%;
+    font-size: 100%;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    transition: all 0.2s ease-in; }
+    .field .input:focus {
+      outline: 0;
+      border-color: #ccc; }
+  .field span {
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    font-size: 12px;
+    color: red; }
 
 /* Using required and a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
 .input:focus + .label,
