@@ -20,24 +20,24 @@ export default () => {
             </NavLink>
             <ul>
               <li>
-                <NavLink className="menu-items" to="/aboutus/profile">
+                <NavLink className="menu-items" activeClassName="active" to="/aboutus/profile">
                   Profile
                 </NavLink>
               </li>
               <li>
-                <NavLink className="menu-items" to="/aboutus/team">
+                <NavLink className="menu-items" activeClassName="active" to="/aboutus/team">
                   Team
                 </NavLink>
               </li>
               <li>
-                <NavLink className="menu-items" to="/aboutus/contact">
+                <NavLink className="menu-items" activeClassName="active" to="/aboutus/contact">
                   Contact
                 </NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink className="menu-items" to="/login">
+            <NavLink className="menu-items" to="/logout">
               Log Out
             </NavLink>
           </li>

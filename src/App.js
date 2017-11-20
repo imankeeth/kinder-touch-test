@@ -15,8 +15,8 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Switch>
-            <AuthenticatedRoute exact path="/" component={Home} />
             <Route path="/login" component={Login} />
+            <AuthenticatedRoute exact path="/*" component={Home} />
           </Switch>
         </Router>
       </Provider>
